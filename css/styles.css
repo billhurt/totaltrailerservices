@@ -132,12 +132,6 @@ a:hover { color: var(--red); }
   display: flex; flex-wrap: wrap; gap: .1rem 1.5rem; padding-block: .4rem;
 }
 
-.avail::before {
-  content: ""; display: inline-block; width: .55rem; height: .55rem;
-  margin-right: .45rem; background: var(--amber); border-radius: 50%;
-  vertical-align: .05em;
-}
-
 .site-header { position: relative; background: var(--paper); border-bottom: 2px solid var(--charcoal); }
 .site-header .wrap {
   display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
