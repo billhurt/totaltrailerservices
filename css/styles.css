@@ -596,8 +596,13 @@ fieldset.field { border: 0; margin: 0; padding: 0; min-width: 0; }
 /* Two blocks, not four columns: there are five pages and one phone number to link to. */
 
 .site-footer { background: var(--charcoal); color: var(--steel); padding: 2.5rem 0 1.5rem; font-size: .95rem; }
-.site-footer a { color: var(--paper); text-decoration-color: var(--amber); }
-.site-footer a:hover { color: var(--amber); }
+.site-footer a {
+  color: var(--paper);
+  text-decoration-color: rgba(207, 128, 37, .5); /* --amber at half strength */
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+.site-footer a:hover { color: var(--amber); text-decoration-color: var(--amber); }
 .site-footer__top { display: grid; gap: 1.5rem; }
 .site-footer__name { font: 700 italic 1.8rem/1 var(--display); color: var(--paper); margin-bottom: .5rem; }
 .site-footer__blurb { max-width: 34ch; }
