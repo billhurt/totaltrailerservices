@@ -1,9 +1,10 @@
 # Total Trailer Services
 
-> Mobile trailer servicing and fault diagnosis based near King's Lynn, Norfolk, UK. The engineer comes to wherever the trailer is kept, with fixed prices from £60. Run by a serving RAF Ground Equipment Engineer with 16+ years in engineering, so bookings are mainly evenings and weekends.
+> Mobile trailer servicing and fault diagnosis based near King's Lynn, Norfolk, UK. The engineer comes to wherever the trailer is kept, with fixed prices from £60. Run by Elliot Owen, a serving RAF Ground Equipment Engineer with 16+ years in engineering, so bookings are mainly evenings and weekends.
 
 ## Key facts
 
+- Owner and engineer: Elliot Owen
 - Business type: sole-trader mobile trailer servicing (no workshop; fully mobile)
 - Based: near King's Lynn, Norfolk, England
 - Areas covered: King's Lynn, Wisbech, Downham Market, Swaffham, Dereham, Hunstanton, Littleport and villages in between
@@ -24,7 +25,7 @@ A general service includes brake servicing (braked trailers), wheel bearing grea
 
 Fault diagnosis and component replacement: quote on request. Covers braking system faults and lighting/wiring faults, plus replacement of worn or failed components.
 
-## Engineer qualifications
+## Engineer qualifications (Elliot Owen)
 
 - 16+ years in engineering, 10+ years as an RAF Ground Equipment Engineer
 - NVQ Level 3 in Engineering Maintenance
