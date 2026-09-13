@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" preserveAspectRatio="xMidYMid slice">
+  <!-- Neutral photo slot. Swap the <img src> for a real photo; nothing else needs to change. -->
+  <defs>
+    <pattern id="hatch" width="22" height="22" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="22" stroke="#b4b4b4" stroke-width="2"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="900" fill="#e3e1e2"/>
+  <rect width="1200" height="900" fill="url(#hatch)" opacity=".35"/>
+  <path d="M60 150V60h90M1050 60h90v90M1140 750v90h-90M150 840H60v-90" fill="none" stroke="#373e44" stroke-width="6"/>
+  <g transform="translate(240 306) scale(6)" fill="none" stroke="#b4b4b4" stroke-width=".9" stroke-linejoin="round">
+    <path d="M6 30h26M32 14h84v14H32z"/>
+    <circle cx="6" cy="30" r="3.5"/>
+    <circle cx="64" cy="34" r="10"/><circle cx="64" cy="34" r="6"/>
+    <circle cx="86" cy="34" r="10"/><circle cx="86" cy="34" r="6"/>
+  </g>
+</svg>
