@@ -35,6 +35,22 @@
    renders best for someone reading beside a broken trailer.
    ========================================================================== */
 
+/* Self-hosted Barlow Condensed (latin subset, SIL Open Font License) — no third-party font request. */
+@font-face {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/barlow-condensed-600-latin.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Barlow Condensed";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/barlow-condensed-700-italic-latin.woff2") format("woff2");
+}
+
 :root {
   --red: #d9080b;
   --red-deep: #a90609;
@@ -563,6 +579,15 @@ fieldset.field { border: 0; margin: 0; padding: 0; min-width: 0; }
 @media (min-width: 40em) { .tile--unsure { grid-column: auto; } }
 
 .hp { position: absolute; left: -9999px; }
+.form__privacy { font-size: .85rem; margin: -.3rem 0 0; max-width: 40ch; }
+
+/* Privacy notice */
+.legal { max-width: 42rem; }
+.legal h2 { font-size: clamp(1.7rem, 4.5vw, 2.1rem); margin-top: 2.4rem; }
+.legal ul { padding-left: 1.1rem; margin: 0 0 1em; }
+.legal li { margin-bottom: .4rem; }
+.legal li::marker { color: var(--red); }
+.legal__updated { font-size: .9rem; }
 .form .btn { justify-self: start; }
 @media (max-width: 30em) { .form .btn { justify-self: stretch; justify-content: center; } }
 
