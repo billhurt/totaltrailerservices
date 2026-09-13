@@ -541,6 +541,8 @@ html.js .nav.is-open { display: block; }
 .wa-panel { background: var(--tyre); color: var(--steel); padding: 1.4rem 1.3rem 1.5rem; }
 .wa-panel h2 { color: var(--paper); font-size: 2rem; }
 .wa-panel__num { font: 700 italic 2.1rem/1 var(--display); color: var(--paper); margin: .2rem 0 1rem; font-variant-numeric: tabular-nums; }
+.email-line { margin: 1rem 0 0; font-size: .95rem; }
+.email-line a, .site-footer a[href^="mailto:"] { overflow-wrap: anywhere; }
 .helps { margin-top: 1.5rem; }
 .helps h2 { font-size: 1.6rem; }
 .helps ul { margin: 0; padding-left: 1.1rem; }
