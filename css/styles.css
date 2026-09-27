@@ -358,10 +358,6 @@ html.js .nav.is-open { display: block; }
 .creds a { color: var(--paper); text-decoration-color: var(--amber); }
 .creds a:hover { color: var(--amber); }
 .creds__grid { display: grid; gap: 2rem; }
-.creds__headline {
-  font: 700 italic clamp(1.7rem, 4.5vw, 2.4rem)/1.05 var(--display);
-  color: var(--amber); margin-bottom: 1.4rem; max-width: 32ch;
-}
 .qual-list { list-style: none; margin: 0; padding: 0; }
 .qual-list li { padding: .8rem 0; border-top: 1px solid #4b535a; line-height: 1.35; }
 .qual-list span { display: block; }
@@ -599,5 +595,5 @@ fieldset.field { border: 0; margin: 0; padding: 0; min-width: 0; }
 .site-footer__base { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #4b535a; font-size: .85rem; display: grid; gap: .3rem; }
 @media (min-width: 48em) {
   .site-footer__top { grid-template-columns: 1fr auto; align-items: start; }
-  .site-footer__base { grid-template-columns: 1fr auto; }
+  .site-footer__base { grid-template-columns: 1fr auto auto; column-gap: 1.5rem; }
 }
