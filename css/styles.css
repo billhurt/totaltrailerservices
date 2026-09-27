@@ -215,20 +215,6 @@ html.js .nav.is-open { display: block; }
 .wa-float__num { display: none; font-weight: 600; opacity: .9; }
 @media (min-width: 48em) { .wa-float__num { display: inline; } }
 
-/* ---------- Photo slots ---------- */
-/* To add a real photo: change the <img src>, then remove the "photo--placeholder" class. */
-
-.photo { position: relative; overflow: hidden; background: var(--steel); aspect-ratio: 4 / 3; margin: 0; }
-.photo img { width: 100%; height: 100%; object-fit: cover; }
-.photo--tall { aspect-ratio: 4 / 5; }
-.photo--wide { aspect-ratio: 16 / 9; }
-.photo--placeholder::after {
-  content: attr(data-label);
-  position: absolute; left: 0; top: 0; max-width: 92%;
-  background: var(--tyre); color: var(--steel);
-  font-size: .8rem; line-height: 1.3; padding: .35rem .65rem;
-}
-
 /* ---------- Axle drawings (decision 2) ---------- */
 
 .axle { width: 84px; height: auto; flex: none; }
@@ -340,11 +326,11 @@ html.js .nav.is-open { display: block; }
 .hero__sub { font-size: 1.2rem; max-width: 36ch; }
 .hero__actions { margin-top: 1.6rem; display: grid; gap: .8rem; justify-items: start; }
 .hero__hint { font-size: .95rem; max-width: 34ch; }
-.hero__media .dataplate { margin: -2.5rem 1rem 0; }
+.hero__media .dataplate { margin: 0; }
 @media (min-width: 60em) {
   .hero { padding: 3.5rem 0 5rem; }
   .hero__grid { grid-template-columns: 1.05fr .95fr; align-items: center; gap: 3rem; }
-  .hero__media .dataplate { margin: -4rem 0 0 -2.5rem; max-width: 23rem; }
+  .hero__media .dataplate { margin: 0; max-width: 23rem; }
 }
 
 .statement { border-top: 2px solid var(--charcoal); }
@@ -438,8 +424,7 @@ html.js .nav.is-open { display: block; }
 .symptoms ul { list-style: none; margin: 0; padding: 0; }
 .symptoms li { padding: .6rem 0 .6rem 1.4rem; border-bottom: 1px solid var(--panel); position: relative; line-height: 1.4; }
 .symptoms li::before { content: ""; position: absolute; left: 0; top: 1.1rem; width: .75rem; height: 3px; background: var(--red); }
-.replace { display: grid; gap: 1.5rem; }
-@media (min-width: 56em) { .replace { grid-template-columns: 5fr 7fr; gap: 3rem; align-items: center; } }
+.replace { display: grid; gap: 1.5rem; max-width: 42rem; }
 
 .faq__grid { display: grid; gap: 1.5rem; }
 @media (min-width: 56em) { .faq__grid { grid-template-columns: 4fr 8fr; gap: 3rem; } .faq__grid > div:first-child { position: sticky; top: 1.5rem; align-self: start; } }
@@ -485,7 +470,8 @@ html.js .nav.is-open { display: block; }
 @media (min-width: 56em) {
   .towns { grid-template-columns: repeat(12, 1fr); column-gap: 3rem; }
   .town { grid-column: span 6; }
-  .town--home { grid-column: 1 / -1; grid-template-columns: 7fr 5fr; gap: 3rem; align-items: start; }
+  .town--home { grid-column: 1 / -1; }
+  .town--home > div { max-width: 46rem; }
   .town--wide { grid-column: span 7; }
   .town--narrow { grid-column: span 5; }
 }
@@ -493,7 +479,6 @@ html.js .nav.is-open { display: block; }
 
 /* About */
 .about-intro__grid { display: grid; gap: 2rem; }
-@media (min-width: 56em) { .about-intro__grid { grid-template-columns: 7fr 4fr; align-items: end; gap: 3rem; } }
 .bio__grid { display: grid; gap: 2.5rem; }
 .bio__prose { max-width: 40rem; }
 .bio__prose h2 { margin-top: 2.2rem; }
@@ -522,8 +507,7 @@ html.js .nav.is-open { display: block; }
   .register__level { margin: 0; }
 }
 
-.evenings__grid { display: grid; gap: 2rem; }
-@media (min-width: 56em) { .evenings__grid { grid-template-columns: 1fr 1fr; gap: 4rem; } }
+.evenings__grid { display: grid; gap: 2rem; max-width: 42rem; }
 
 /* Contact */
 .contact__grid { display: grid; gap: 2.5rem; }
@@ -537,8 +521,10 @@ html.js .nav.is-open { display: block; }
 .wa-panel__num { font: 700 italic 2.1rem/1 var(--display); color: var(--paper); margin: .2rem 0 1rem; font-variant-numeric: tabular-nums; }
 .email-line { margin: 1rem 0 0; font-size: .95rem; }
 .social-line { margin: .7rem 0 0; font-size: .95rem; }
-.site-footer .social { margin-top: .35rem; }
-.site-footer .social a { font-weight: 600; }
+.site-footer .social { display: flex; gap: .9rem; margin-top: .7rem; }
+.site-footer .social a { display: inline-flex; padding: .15rem; text-decoration: none; color: var(--paper); }
+.site-footer .social a:hover { color: var(--amber); }
+.site-footer .social svg { width: 1.4rem; height: 1.4rem; fill: currentColor; }
 .email-line a, .site-footer a[href^="mailto:"] { overflow-wrap: anywhere; }
 .helps { margin-top: 1.5rem; }
 .helps h2 { font-size: 1.6rem; }
