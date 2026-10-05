@@ -285,6 +285,8 @@ html.js .nav.is-open { display: block; }
 .price {
   font: 700 italic 2rem/1 var(--display); color: var(--red); white-space: nowrap;
 }
+/* '+ parts' sits under the figure in body type so the red price still leads. */
+.price__parts { display: block; margin-top: .15rem; font: 400 .8rem/1 var(--body); color: var(--charcoal); }
 .jobsheet tfoot td { background: var(--sheet); font-size: .95rem; }
 .jobsheet tfoot .price { font-size: 1.3rem; color: var(--tyre); }
 @media (max-width: 26em) {

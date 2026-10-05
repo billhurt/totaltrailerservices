@@ -56,10 +56,10 @@
       "@type": "OfferCatalog",
       "name": "Mobile trailer services",
       "itemListElement": [
-        { "@type": "Offer", "name": "General service – unbraked trailer", "price": "60.00", "priceCurrency": "GBP", "itemOffered": { "@type": "Service", "name": "Unbraked trailer general service", "serviceType": "Mobile trailer servicing" } },
-        { "@type": "Offer", "name": "General service – single axle braked trailer", "price": "80.00", "priceCurrency": "GBP", "itemOffered": { "@type": "Service", "name": "Single axle braked trailer general service", "serviceType": "Mobile trailer servicing" } },
-        { "@type": "Offer", "name": "General service – twin axle braked trailer", "price": "100.00", "priceCurrency": "GBP", "itemOffered": { "@type": "Service", "name": "Twin axle braked trailer general service", "serviceType": "Mobile trailer servicing", "description": "Covers flatbeds, car transporters, horse trailers and towed horseboxes, livestock and catering trailers." } },
-        { "@type": "Offer", "name": "General service – tri axle braked trailer", "price": "120.00", "priceCurrency": "GBP", "itemOffered": { "@type": "Service", "name": "Tri axle braked trailer general service", "serviceType": "Mobile trailer servicing", "description": "Covers heavy plant, long flatbed trailers and the largest catering units." } },
+        { "@type": "Offer", "name": "General service – unbraked trailer", "price": "60.00", "priceCurrency": "GBP", "description": "Fixed price for the work. Parts are charged on top and quoted before fitting.", "itemOffered": { "@type": "Service", "name": "Unbraked trailer general service", "serviceType": "Mobile trailer servicing" } },
+        { "@type": "Offer", "name": "General service – single axle braked trailer", "price": "80.00", "priceCurrency": "GBP", "description": "Fixed price for the work. Parts are charged on top and quoted before fitting.", "itemOffered": { "@type": "Service", "name": "Single axle braked trailer general service", "serviceType": "Mobile trailer servicing" } },
+        { "@type": "Offer", "name": "General service – twin axle braked trailer", "price": "100.00", "priceCurrency": "GBP", "description": "Fixed price for the work. Parts are charged on top and quoted before fitting.", "itemOffered": { "@type": "Service", "name": "Twin axle braked trailer general service", "serviceType": "Mobile trailer servicing", "description": "Covers flatbeds, car transporters, horse trailers and towed horseboxes, livestock and catering trailers." } },
+        { "@type": "Offer", "name": "General service – tri axle braked trailer", "price": "120.00", "priceCurrency": "GBP", "description": "Fixed price for the work. Parts are charged on top and quoted before fitting.", "itemOffered": { "@type": "Service", "name": "Tri axle braked trailer general service", "serviceType": "Mobile trailer servicing", "description": "Covers heavy plant, long flatbed trailers and the largest catering units." } },
         { "@type": "Offer", "name": "Fault diagnosis and component replacement", "description": "Braking system and lighting/wiring fault diagnosis, with component replacement. Quote on request.", "itemOffered": { "@type": "Service", "name": "Trailer fault diagnosis and component replacement", "serviceType": "Trailer fault diagnosis" } }
       ]
     }
@@ -124,7 +124,8 @@
       <div class="wrap">
         <div class="general__head">
           <h2 id="general-title">General service</h2>
-          <p>The price is set by the trailer, not by how long the job takes. Count the axles, check whether it has brakes, and that's your price.</p>
+          <p>The price is set by the trailer, not by how long the job takes. Count the axles, check whether it has brakes, and that's your price for the work.</p>
+          <p>Parts aren't included. If your trailer needs bearings, brake shoes, lamps or anything else, those are charged on top at cost, and I'll tell you the price before fitting them.</p>
           <p>Horseboxes and food or catering trailers are covered by the same prices. They're usually twin or tri axle braked, so they sit in those rows; a smaller catering trailer on one braked axle is £80.</p>
         </div>
 
@@ -141,28 +142,28 @@
                     <svg class="axle" viewBox="0 0 120 48" aria-hidden="true" focusable="false"><path class="axle__body" d="M6 30h26M32 14h84v14H32z"/><circle class="axle__hitch" cx="6" cy="30" r="3.5"/><circle class="axle__tyre" cx="74" cy="34" r="10"/><circle class="axle__hub" cx="74" cy="34" r="3"/></svg>
                     <span><span class="jobsheet__name">Unbraked trailer</span><span class="jobsheet__note">Up to 750 kg gross. Box, garden, utility and small camping trailers.</span></span>
                   </span></th>
-                  <td class="price">£60</td>
+                  <td class="price">£60<span class="price__parts">+ parts</span></td>
                 </tr>
                 <tr>
                   <th scope="row"><span class="jobsheet__trailer">
                     <svg class="axle" viewBox="0 0 120 48" aria-hidden="true" focusable="false"><path class="axle__body" d="M6 30h26M32 14h84v14H32z"/><circle class="axle__hitch" cx="6" cy="30" r="3.5"/><circle class="axle__tyre" cx="74" cy="34" r="10"/><circle class="axle__drum" cx="74" cy="34" r="6"/><circle class="axle__hub" cx="74" cy="34" r="2.5"/></svg>
                     <span><span class="jobsheet__name">Single axle braked</span><span class="jobsheet__note">Two wheels with brakes. Larger box trailers, small boat and plant trailers, smaller catering trailers.</span></span>
                   </span></th>
-                  <td class="price">£80</td>
+                  <td class="price">£80<span class="price__parts">+ parts</span></td>
                 </tr>
                 <tr>
                   <th scope="row"><span class="jobsheet__trailer">
                     <svg class="axle" viewBox="0 0 120 48" aria-hidden="true" focusable="false"><path class="axle__body" d="M6 30h26M32 14h84v14H32z"/><circle class="axle__hitch" cx="6" cy="30" r="3.5"/><circle class="axle__tyre" cx="64" cy="34" r="10"/><circle class="axle__drum" cx="64" cy="34" r="6"/><circle class="axle__hub" cx="64" cy="34" r="2.5"/><circle class="axle__tyre" cx="86" cy="34" r="10"/><circle class="axle__drum" cx="86" cy="34" r="6"/><circle class="axle__hub" cx="86" cy="34" r="2.5"/></svg>
                     <span><span class="jobsheet__name">Twin axle braked</span><span class="jobsheet__note">Four wheels. Flatbeds, car transporters, horse trailers and towed horseboxes, livestock and catering trailers.</span></span>
                   </span></th>
-                  <td class="price">£100</td>
+                  <td class="price">£100<span class="price__parts">+ parts</span></td>
                 </tr>
                 <tr>
                   <th scope="row"><span class="jobsheet__trailer">
                     <svg class="axle" viewBox="0 0 120 48" aria-hidden="true" focusable="false"><path class="axle__body" d="M6 30h26M32 14h84v14H32z"/><circle class="axle__hitch" cx="6" cy="30" r="3.5"/><circle class="axle__tyre" cx="52" cy="34" r="10"/><circle class="axle__drum" cx="52" cy="34" r="6"/><circle class="axle__hub" cx="52" cy="34" r="2.5"/><circle class="axle__tyre" cx="74" cy="34" r="10"/><circle class="axle__drum" cx="74" cy="34" r="6"/><circle class="axle__hub" cx="74" cy="34" r="2.5"/><circle class="axle__tyre" cx="96" cy="34" r="10"/><circle class="axle__drum" cx="96" cy="34" r="6"/><circle class="axle__hub" cx="96" cy="34" r="2.5"/></svg>
                     <span><span class="jobsheet__name">Tri axle braked</span><span class="jobsheet__note">Six wheels. Heavy plant, long flatbed trailers and the largest catering units.</span></span>
                   </span></th>
-                  <td class="price">£120</td>
+                  <td class="price">£120<span class="price__parts">+ parts</span></td>
                 </tr>
               </tbody>
             </table>
@@ -178,14 +179,14 @@
             <h3 class="sheet__title">What every general service covers</h3>
             <ul class="checks">
               <li><span><strong>Brake service</strong>Brakes cleaned, checked for wear and adjusted so they pull evenly, including the cables, rods and overrun damper.<br><span class="na">Braked trailers only</span></span></li>
-              <li><span><strong>Wheel bearings</strong>Greased, checked for play and noise, and replaced where they're worn.</span></li>
+              <li><span><strong>Wheel bearings</strong>Greased, checked for play and noise, and replaced where they're worn. Replacement bearings are charged as parts.</span></li>
               <li><span><strong>Lights check</strong>Every lamp, indicator and reflector, the number plate light and the plug and socket.</span></li>
               <li><span><strong>Coupling and breakaway</strong>Coupling head, jockey wheel, and the breakaway cable or secondary coupling.</span></li>
               <li><span><strong>Tyres and wheels</strong>Tread, sidewall condition, pressures and wheel nut security.</span></li>
               <li><span><strong>Full safety check</strong>Chassis, drawbar, suspension and floor looked over for damage or corrosion.</span></li>
               <li><span><strong>UK road law</strong>Checked against the legal requirements for towing the trailer on UK roads.</span></li>
             </ul>
-            <p class="sheet__foot">If anything turns up that falls outside the service, I'll explain what it is and what it costs before any extra work goes ahead.</p>
+            <p class="sheet__foot">The price covers the labour. Parts are extra, and if anything turns up that falls outside the service, I'll explain what it is and what it costs before any extra work goes ahead.</p>
           </div>
         </div>
       </div>
